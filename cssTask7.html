@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #a52355; 
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .registration-container {
+    background-color: #731a3e; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align:left;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    margin: auto;
+  }
+
+  .registration-container select {
+    height: 40px;
+  }
+
+  .registration-container .input-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .registration-container .input-group label,
+  .registration-container .input-group input {
+    width: 100%;
+  }
+
+  .registration-container .input-group input {
+    background-color: white;
+    color: #333;
+    height: 30px; 
+  }
+
+  .registration-container .radio-group label {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .registration-container .radio-group input[type="radio"] {
+    display: inline-block;
+    width: auto;
+  }
+  .registration-container button {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff; 
+    color: #660129;
+    font-size: 16px;
+    margin: auto
+  }
+</style>
+</head>
+<body>
+  <div class="registration-container">
+    <form action="#">
+      <div class="input-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="your name" required style="width: 85%">
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="your email" required style="width: 85%">
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required style="width: 85%">
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required style="width: 85%">
+      </div>
+      <br>
+      <div class="input-group radio-group">
+        <label>Gender:</label>
+        Male:<input type="radio" name="gender" value="male" id="male"><label for="male"> </label>
+        Female:<input type="radio" name="gender" value="female" id="female"><label for="female"></label>
+        Other:<input type="radio" name="gender" value="other" id="other"><label for="other"> </label>
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="language">language</label>
+        <select id="language" required style="width: 85%">
+            <option value="" disabled selected hidden>Select language</option>
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+        </select>
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" required style="width: 85%">
+      </div>
+      <br>
+      <div class="input-group">
+        <label for="about">About:</label>
+        <textarea id="about" name="about" rows="4" placeholder="Write about yourself..." required style="width: 85%"></textarea>
+      </div>
+      <br>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>

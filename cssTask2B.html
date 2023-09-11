@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizontal Navigation Bar</title>
+<style>
+  .navbar-container {
+  background-color: #ffffff; 
+  padding: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border: 2px solid #000; 
+  max-width: 400px;
+}
+
+
+  .horizontal-navbar {
+    background-color: #ababab; 
+    overflow: hidden;
+  }
+
+  .horizontal-navbar a {
+    float: left;
+    display: block;
+    color: #000080; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 2px solid #000080; 
+  }
+
+  .horizontal-navbar a:last-child {
+    border-right: none; 
+  }
+
+  .horizontal-navbar a:hover {
+    background-color: #5f5e5e; 
+    color: #ffffff; 
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar-container">
+  <div class="horizontal-navbar">
+    <a href="#home">Home</a>
+    <a href="#java">Java</a>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#bootstrap">Bootstrap</a>
+  </div>
+</div>
+
+</body>
+</html>
